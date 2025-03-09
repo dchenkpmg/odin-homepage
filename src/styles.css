@@ -238,3 +238,44 @@ body {
     width: 100vw;
     object-fit: cover;
 }
+
+@media (min-width: 401px) and (max-width: 799px) {
+
+
+
+
+
+
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .contact-me h1 {
+        font-weight: normal;
+        font-family: var(--secondary-font);
+        padding-top: 1rem;
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .contact-me .contact-description {
+        padding-right: 1rem;
+    }
+
+    .mobile-nilov-footer img {
+        width: 400px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-content .logos {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+}
