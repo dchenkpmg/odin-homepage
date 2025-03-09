@@ -382,6 +382,72 @@ body {
 }
 
 @media (min-width: 800px) {
+    .header-content {
+        display: flex;
+        transform: skewY(5deg) translateY(25%);
+    }
+
+    .corner-sqr {
+        visibility: hidden;
+        display: inline;
+        width: 15rem;
+        height: 13rem;
+        float: left;
+    }
+
+    .diagonal-box {
+        transform: skewY(-5deg) translateY(-25%);
+    }
+
+    .header-content picture {
+        position: absolute;
+        margin-top: 2rem;
+        left: 1rem;
+        width: 250px;
+        height: auto;
+    }
+
+    .bottom-left-text {
+        position: absolute;
+        bottom: 2px;
+        color: white;
+        font-family: var(--secondary-font);
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .about-me {
+        display: none;
+    }
+
+    .about-me-tablet-desktop {
+        display: block;
+        margin-top: 3.75rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        color: black;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 2rem;
+    }
+
+    .about-me-tablet-desktop h1 {
+        font-family: var(--secondary-font);
+        margin-top: 2rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+
+    .about-me-tablet-desktop .logos {
+        display: none;
+    }
+
+    .my-work {
+        margin-top: 5rem;
+    }
+
     .my-work h1 {
         text-align: left;
         margin-left: 2rem;
@@ -434,5 +500,17 @@ body {
     .contact-detail {
         display: flex;
         gap: 0.75rem;
+    }
+
+    .contact-me .contact-description {
+        font-size: 0.8rem;
+    }
+
+    .contact-me .contact-address {
+        font-size: 0.8rem;
+    }
+
+    .contact-me .contact-numbers {
+        font-size: 0.8rem;
     }
 }
