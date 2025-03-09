@@ -76,8 +76,165 @@ textarea:not([rows]) {
 
 /* End CSS Reset */
 
+body {
+    margin: 0;
+}
 
 :root {
     --main-font: "Roboto", sans-serif;
     --secondary-font: "Playfair Display", serif;
+    --article-font-size: 1rem;
+    --background-image-color: linear-gradient(45deg, #630381, #ff0099);
+}
+
+.diagonal-box {
+    background-image: var(--background-image-color);
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewY(-25deg) translateY(-20%);
+}
+
+.header-content {
+    max-width: 50rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    color: white;
+    transform: skewY(25deg) translateY(20%);
+    position: relative;
+    padding-top: 2rem;
+}
+
+.mobile-nilov {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.bottom-left-text {
+    position: absolute;
+    bottom: 8px;
+    font-family: var(--secondary-font);
+    left: 16px;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.about-me {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+}
+
+.about-me h1 {
+    font-weight: normal;
+}
+
+.about-me-text {
+    text-align: left;
+    font-family: var(--main-font);
+    font-size: var(--article-font-size);
+    margin: 1rem 1rem;
+}
+
+.logos {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.logos img {
+    width: 2rem;
+}
+
+.my-work {
+    margin: 1rem 1rem;
+    font-family: var(--secondary-font);
+    margin-top: 3rem;
+}
+
+.my-work h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.card {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 12rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-bottom-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.card-bottom-header img {
+    width: 1rem;
+}
+
+.card-bottom-header p {
+    margin-top: 0;
+    flex: auto;
+    margin-left: 1.2rem;
+}
+
+.project-description {
+    font-family: var(--main-font);
+    font-size: 0.8rem;
+    margin-left: 1.2rem;
+    margin-right: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.contact-me {
+    background-image: var(--background-image-color);
+    color: white;
+}
+
+.contact-me h1 {
+    font-weight: normal;
+    font-family: var(--secondary-font);
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.contact-me p {
+    font-family: var(--main-font);
+    margin: 1rem 1rem 0 1rem;
+}
+
+.contact-me .contact-address {
+    font-size: 0.8rem;
+}
+
+.contact-me .contact-numbers {
+    font-size: 0.8rem;
+}
+
+.contact-me .logos {
+    padding-bottom: 4rem;
+}
+
+.mobile-nilov-footer img {
+    width: 100vw;
+    object-fit: cover;
 }
