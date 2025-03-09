@@ -151,6 +151,10 @@ body {
     display: none;
 }
 
+.bottom-left-text-tablet {
+    display: none;
+}
+
 .logos img {
     width: 2rem;
 }
@@ -277,7 +281,8 @@ body {
         height: auto;
     }
 
-    .bottom-left-text {
+    .bottom-left-text-tablet {
+        display: block;
         position: absolute;
         color: white;
         right: 2rem;
@@ -379,6 +384,10 @@ body {
     .contact-me .contact-numbers {
         font-size: 0.8rem;
     }
+
+    .bottom-left-text {
+        display: none;
+    }
 }
 
 @media (min-width: 800px) {
@@ -441,7 +450,9 @@ body {
     }
 
     .about-me-tablet-desktop .logos {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
     }
 
     .my-work {
