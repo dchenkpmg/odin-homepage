@@ -207,6 +207,7 @@ body {
 .contact-me {
     background-image: var(--background-image-color);
     color: white;
+    margin-top: 5rem;
 }
 
 .contact-me h1 {
@@ -230,6 +231,10 @@ body {
     font-size: 0.8rem;
 }
 
+.contact-numbers img {
+    display: none;
+}
+
 .contact-me .logos {
     padding-bottom: 4rem;
 }
@@ -240,11 +245,86 @@ body {
 }
 
 @media (min-width: 401px) and (max-width: 799px) {
+    .my-work h1 {
+        text-align: left;
+        margin-left: 2rem;
+    }
 
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0 2rem;
+    }
 
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    }
 
+    .contact-me h1 {
+        font-weight: normal;
+        font-family: var(--secondary-font);
+        padding-top: 1rem;
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
 
+    .contact-numbers img {
+        display: block;
+        width: 20px;
+    }
 
+    .contact-me .contact-description {
+        padding-right: 1rem;
+    }
+
+    .mobile-nilov-footer img {
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+    }
+
+    .footer-content .logos {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .contact-detail {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .contact-me .contact-description {
+        font-size: 0.8rem;
+    }
+
+    .contact-me .contact-address {
+        font-size: 0.8rem;
+    }
+
+    .contact-me .contact-numbers {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .my-work h1 {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 0 2rem;
+    }
 
     .contact-me {
         display: flex;
@@ -267,9 +347,8 @@ body {
     }
 
     .mobile-nilov-footer img {
-        width: 400px;
-        padding-top: 1rem;
-        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-right: 3rem;
         padding-bottom: 3rem;
     }
 
@@ -277,5 +356,15 @@ body {
         display: flex;
         justify-content: flex-start;
         padding-left: 1rem;
+    }
+
+    .contact-numbers img {
+        display: block;
+        width: 20px;
+    }
+
+    .contact-detail {
+        display: flex;
+        gap: 0.75rem;
     }
 }
