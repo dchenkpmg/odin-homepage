@@ -245,6 +245,30 @@ body {
 }
 
 @media (min-width: 401px) and (max-width: 799px) {
+    .header-content {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .header-content picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .about-me {
+        margin-top: 0;
+        color: black;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .about-me .logos {
+        display: none;
+    }
+
     .my-work h1 {
         text-align: left;
         margin-left: 2rem;
